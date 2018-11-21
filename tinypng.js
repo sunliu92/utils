@@ -62,10 +62,10 @@ function fileUpload(img){
 
 function fileUpdate(imgpath,obj)
 {
-    console.log(obj);
+    // console.log(obj);
     let options = new URL(obj.output.url);
     let req = https.request(options,res => {
-        console.log(res);
+        // console.log(res);
         let body = '';
         res.setEncoding('binary');
         res.on('data',function(data){
